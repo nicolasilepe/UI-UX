@@ -4,8 +4,15 @@
     box-sizing: border-box;
 }
 
-body {
+body, html {
+    height: 100%;
     font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Ensures footer stays at the bottom */
 }
 
 header {
@@ -16,16 +23,28 @@ header {
     background-color: #f0f0f0;
 }
 
+.profile-info {
+    display: flex;
+    align-items: center;
+}
+
 .profile-picture {
     width: 50px;
     height: 50px;
     border-radius: 50%;
     background-color: #d3d3d3;
+    margin-right: 10px;
+}
+
+.profile-name {
+    font-size: 1.2em;
+    font-weight: bold;
 }
 
 nav button {
     margin-left: 10px;
-    padding: 5px 10px;
+    padding: 10px 20px;
+    font-size: 1em;
     background-color: #ccc;
     border: none;
     cursor: pointer;
@@ -36,6 +55,8 @@ nav button {
     padding: 30px;
     background-color: #e0e0e0;
     margin: 10px;
+    flex-grow: 1; 
+    border: 2px solid black;
 }
 
 .intro-image {
@@ -54,6 +75,8 @@ nav button {
     padding: 30px;
     background-color: #e0e0e0;
     margin: 10px;
+    flex-grow: 1; /* Ensures the section takes up available space */
+    border: 2px solid black;
 }
 
 .project-image {
@@ -73,6 +96,13 @@ footer {
     align-items: center;
     padding: 20px;
     background-color: #d3d3d3;
+    width: 100%;
+}
+
+.footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
 }
 
 .social-icons {
