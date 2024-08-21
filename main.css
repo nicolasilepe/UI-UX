@@ -2,11 +2,13 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    /*background-color: aqua;*/
 }
 
 body, html {
     height: 100%;
     font-family: Arial, sans-serif;
+    background-color: rgb(218, 190, 139);
 }
 
 body {
@@ -39,6 +41,8 @@ header {
 .profile-name {
     font-size: 1.2em;
     font-weight: bold;
+    font-family: "Paytone One" , Arial;
+    /* Add font family ^ */
 }
 
 nav button {
@@ -114,4 +118,8 @@ footer {
     height: 20px;
     background-color: #a9a9a9;
     margin-left: 10px;
+}
+
+.nav-button {
+
 }
